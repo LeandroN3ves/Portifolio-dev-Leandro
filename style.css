@@ -90,3 +90,27 @@ footer { text-align: center; padding: 20px; background-color: #000; }
         left: 9px;
     }
 }
+
+/* ===== ESTILO ATUALIZADO PARA O BOTÃO 'VER PROJETO' ===== */
+.project-info a {
+    display: block; /* Faz o link ocupar a linha inteira */
+    width: 100%;    /* Garante que ele ocupe 100% da largura do card */
+    margin-top: 20px;
+    padding: 12px 20px;
+    
+    background-color: var(--bg-card); /* Mesma cor dos cards de habilidades */
+    color: var(--primary-highlight);  /* Texto na cor âmbar */
+    
+    text-align: center; /* Centraliza o texto dentro do botão */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid var(--primary-highlight); /* Adiciona uma borda sutil na cor âmbar */
+    
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-info a:hover {
+    background-color: var(--primary-highlight); /* No hover, o fundo fica âmbar */
+    color: var(--bg-main); /* E o texto fica escuro */
+}
